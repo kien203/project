@@ -1,0 +1,196 @@
+#content{
+	width: 85%;
+	height: 2990px;
+    background-color: #0a0e0f;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*Thông báo*/
+.Notification{
+	display: inline-block;
+	width: 96%;
+	margin-left: 21.297px;
+	margin-top:20px;
+	background-color: #2d2d2d;
+	border-radius: 3px;
+	height: 200px;
+}
+.Notification li{
+	color: white;
+	margin-left:20px;
+}
+.Notification li p{
+	margin: 0px 0px 0px 0px;
+	color: yellow;
+	font-size: 23px;
+}
+.Notification li a{
+	color: red;
+	text-decoration: none;
+}
+
+/*List Film New*/
+.ListFilmNew{
+	position: relative;
+	display: inline-flex;
+	width: 96%;
+	height: 182px;
+	margin-left: 21.297px;
+	margin-top:15px;
+}
+.ListFilmNew-Item{
+	width: 121px;
+	height: 176px;
+/*	background-image: url("../image/yoi.gif");*/
+	margin: 15px 0px 0px 17px;
+/*	background-color: blue;*/
+	position: relative;
+}
+.ListFilmNew-Item:hover{
+	opacity: 0.7;
+}
+
+.ListFilmNew-Item .Filmnew-Play{
+	display: none;
+	position: absolute;
+	left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    animation-name: a;
+    animation-duration: 0.1s;
+}
+.ListFilmNew-Item:hover .Filmnew-Play{
+	display: inline;
+	background-color: rgba(0,0,0,.4);
+}
+@keyframes a{
+	0%{width: 0px;height: 0px;font-size: 0;}
+	50%{width: 25px;height: 25px;font-size: 0.5;}
+	100%{width: 50px;height: 50px;font-size: 1;}
+}
+
+.SpanLeft,
+.SpanRight{
+	position: absolute;
+	background-color: #a82e34;
+	opacity: 0.5;
+    top: 80px;
+    border: 1px solid #a82e34;
+}
+.SpanLeft p,
+.SpanRight p{
+	margin: 8px 3px 8px 3px;
+	color: white;
+}
+.SpanLeft{
+	left: -8px;
+}
+.SpanRight{
+	right: -8px;
+}
+
+/*ContentMain*/
+.ContentMain{
+	display: inline-flex;
+}
+/*ContentMain - Left*/
+#ContentMain-Left{
+	width: 786px;
+    margin: 20px 0px 0px 20px;
+}
+.ListFilmHot{
+	position: relative;
+}
+.ListFilmHot-Image{
+	height: 332px;
+	background-image: url("../image/ayaka.gif");
+	opacity: 0.7;
+}
+.ListFilmHot-Backgr-Content{
+	position: absolute;
+	width: 450px;
+	height: 332px;
+	opacity: 0.3;
+	top: 0px;
+	background-color: black;
+}
+.ListFilmHot-Content{
+	position: absolute;
+	width: 450px;
+	color: white;
+	top: 0px;
+    left: 15px;
+}
+.ListFilmHot-Content-Header i{
+	float: left;
+}
+.ListFilmHot-Content-Header p{
+	color: #fff;
+	text-align: center;
+	line-height: 19px;
+	font-size: 10px;
+	background-color: red;
+	border-radius: 9px;
+	width: 35px;
+	height: 19px;
+	float: left;
+	margin: 0;
+    margin-left: 10px;
+}
+/*ListFilmHot-Infor*/
+.ListFilmHot-Content-Infor .Studio-Infor span,
+.ListFilmHot-Content-Infor .Category-Infor span{
+	font-size: 13px;
+    color: darkgray;
+}
+.ListFilmHot-Content-Infor .Studio-Infor p,
+.ListFilmHot-Content-Infor .Category-Infor p{
+	font-size: 14px;
+}
+/*Fontawesome-user*/
+.ListFilmHot-Content-Infor .fontawesome-user{
+	display: inline-flex;
+	margin-top: 7px;
+}
+.ListFilmHot-Content-Infor .fontawesome-user img{
+	margin-right: 7px;
+}
+.ListFilmHot-Content-Infor .fontawesome-user button{
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: 1px solid #b5e745;
+	border-radius: 5px;
+	display: inline;
+}
+.ListFilmHot-Content-Infor .fontawesome-user button:after{
+	content:'\2026';
+	color: #b5e745;
+	font-size: 20px;
+	display:inline-block ;
+	margin-top: -6px;
+}
+.ListFilmHot-Content-Infor .Film{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid red;
+	border-radius: 5px;
+	background-color: red;
+	color: #fff;
+	margin-top: 7px;
+}
+.ListFilmHot-Content-Infor .Film span{
+	font-size: 12px;
+    margin-left: 7px;
+}

@@ -1,0 +1,209 @@
+/*FilmUpdating-Đang cập nhập
+FilmComingSoon-Sắp chiếu
+FilmIntroduce-Đề cử*/
+/*Header*/
+#FilmUpdating .FilmUpdating-Header,
+#Film-ComingSoon .FilmComingSoon-Header,
+#FilmIntroduce .FilmIntroduce-Header{
+	display: inline-flex;
+	margin-top: 10px;
+}
+#FilmUpdating .FilmUpdating-Header h2,
+#Film-ComingSoon .FilmComingSoon-Header h2,
+#FilmIntroduce .FilmIntroduce-Header h2{
+	width: 180px;
+	height: 37px;
+	font-size: 19px;
+	background: linear-gradient(to right, #b71c1c, #8e1438);
+	border-radius: 6px;
+	line-height: 37px;
+	text-align: center;
+	color: #fff;
+	margin-right: 10px;
+}
+#FilmUpdating .FilmUpdating-Header a,
+#Film-ComingSoon .FilmComingSoon-Header a,
+#FilmIntroduce .FilmIntroduce-Header a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #0a0e0f;
+	color: #585854;
+	border: 0px solid #0a0e0f;
+	margin-left: 20px;
+	margin-top: 25px;
+	font-size: 16px;
+}
+/*Hover*/
+.Film{
+	width: 141px;
+	height: 260px;
+	float: left;
+	margin-right: 16px;
+	position: relative;
+}
+.Film:hover .Image-Film,.Infor-Film,
+.Film:hover .Image-Film,span{
+	opacity: 0.7;
+}
+.Filmnew-Play{
+	display: none;
+	position: absolute;
+	left: 0;
+    right: 0;
+    bottom: 50px;
+    top: 0;
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    animation-name: a;
+    animation-duration: 0.1s;
+}
+.Film:hover .Filmnew-Play{
+	display: inline;
+	background-color: rgba(0,0,0,.4);
+	z-index: 10;
+}
+@keyframes a{
+	0%{width: 0px;height: 0px;font-size: 0;}
+	50%{width: 25px;height: 25px;font-size: 0.5;}
+	100%{width: 50px;height: 50px;font-size: 1;}
+}
+
+.Film:hover .Infors{
+	display: inline;
+}
+.Infors{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	width: 200px;
+    left: 125px;
+    max-width: 270px;
+    z-index: 10;
+    padding: 1rem 1.25rem 1.25rem;
+    border-radius: 5px;
+}
+.Infors .arrow-infor{
+	position: absolute;
+    left: -11px;
+    top: 98px;
+    color: #fff;
+}
+.Infors .Title{
+	font-size: 14px;
+	font-weight: 800;
+}
+.Infors i,
+.Infors .HD,
+.Infors p{
+	float: left;
+}
+.Infors .HD{
+	margin: 0px 8px 0px 0px;
+	color: #fff;
+    text-align: center;
+    line-height: 19px;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 9px;
+    width: 35px;
+    height: 19px;
+}
+.Infors .Studio-Infor span,
+.Infors .Category-Infor span{
+	font-size: 13px;
+}
+
+/*Content */
+.Image-Film{
+	position: relative;
+}
+.Image-Film img{
+	width: 141px;
+	height: 211px;
+	border-radius: 5px;
+}
+/* Đánh giá*/
+.Evaluate{
+	width: 45px;
+    height: 28px;
+   /*    border: 1px solid;*/
+    line-height: 28px;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    /*    background-color: black;*/
+    background: rgba(0,0,0,.65);
+}
+.Evaluate i{
+	font-size: 13px;
+}
+/*Tập phim*/
+.Episode{
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	background-color: red;
+	position: absolute;
+	top: 6px;
+	left: 95px;
+}
+.Episode span{
+	font-size: 10px;
+}
+.Infor-Film{
+	color: #fff;
+	text-align: center;
+}
+.Infor-Film .Name-Film,
+.Infor-Film .View-Film{
+	margin: 0px;
+}
+.Infor-Film .View-Film{
+	color: #585854;
+	font-size: 13px;
+}
+
+/*Footer*/
+#FilmUpdating-Footer a,
+#FilmComingSoon-Footer a,
+#FilmIntroduce-Footer a{
+	width: 100%;
+	height: 35px;
+	display: inline-block;
+	background-color: #0f1517;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Film đề cử-SUP*/
+/*Công chiếu*/
+.Image-Film .a{
+	position: absolute;
+    top: 82px;
+    left: 35px;
+    font-size: 30px;
+    color: #fff;
+}
+.Image-Film .b{
+	position: absolute;
+    color: #fff;
+    background-color: red;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 13px;
+}

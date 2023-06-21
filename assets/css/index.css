@@ -1,0 +1,128 @@
+html{
+	background-color: #1a2327;
+/*	font-family: alata,sans-serif;*/
+}
+/*navigation*/
+#nav{
+	display: inline-flex;
+	width: 100%;
+	height: 70px;
+	background-color: black;
+}
+#nav > ul{
+	list-style-type: none;
+	display: inline-flex;
+	font-size: 15px;
+	color: white;
+	margin-left: 200px;
+}
+#nav > ul > li{
+	margin: 0px 10px;
+	line-height: 40px;
+}
+/*NAV - Trang chủ*/
+.nav-trangchu{
+/*	position: relative;*/
+/*	border-bottom: 3px solid #b5e745;*/
+}
+.nav-trangchu:after{
+	width: 60px;
+	height: 3px;
+    content: '';
+    margin: auto;
+    display: block;
+/*    position: absolute;*/
+    background-color: #b5e745;
+}
+
+/*NAV - Thể loại*/
+.nav-theloai,
+.nav-xephang,
+.nav-season{
+	position: relative;
+}
+.sub-theloai,
+.sub-xephang,
+.sub-season{
+	position: absolute;
+	list-style-type: none;
+	margin-left: 0px;
+    padding-left: 0px;
+    width: 400px;
+    display: none;
+    background-color: white;
+    border-top: 5px solid #b5e745;
+}
+.sub-theloai > li,
+.sub-xephang > li,
+.sub-season > li{
+	margin-left: 20px;
+	float: left;
+	width: 28%;
+}
+.sub-theloai > li > a,
+.sub-xephang > li > a,
+.sub-season > li > a{
+	text-decoration: none;
+	margin-right: 30px;
+	color: black;
+}
+.sub-theloai i,
+.sub-xephang i,
+.sub-season i{
+	position: absolute;
+	top: -11px;
+    left: 20px;
+    color: #b5e745;
+}
+#nav .nav-theloai:hover .sub-theloai{
+	display: block;
+}
+#nav > ul > li > a{
+	text-decoration: none;
+	color: white;
+}
+.nav-theloai .sub-xephang div {
+	display: inline-block;
+}
+
+/*NAV - Xếp hạng*/
+#nav .nav-xephang:hover .sub-xephang{
+	display: block;
+}
+
+/*/*NAV - Season*/
+.sub-season{
+	width: 480px;
+}
+#nav .nav-season:hover .sub-season{
+	display: block;
+}
+
+/*NAV - Tìm kiếm*/
+#nav-search{
+	margin-left: 200px;
+	line-height: 70px;
+	position: relative;
+}
+#nav-search input{
+	background-color: #1a2327;
+	padding: 10px 20px;
+	padding-left: 25px;
+}
+#nav-search span{
+	position: absolute;
+	top: 2px;
+	left: 5px;
+}
+
+/*NAV - Đăng nhập*/
+#nav button{
+	border: 0px solid;
+	border-radius: 5px;
+	background-color: #b71c1c;
+	color: white;
+	width: 110px;
+    height: 40px;
+    margin:16px 0px 0px 20px;
+}

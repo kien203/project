@@ -1,0 +1,327 @@
+#ContentMain-Right{
+	float: left;
+	margin-left: 20px;
+}
+#Random,
+.Question-Anime{
+	display: inline-block;
+	width: 280px;
+	background-color: #2d2d2d;
+	border-radius: 3px;
+	margin: 20px 0px 20px 0px;
+}
+#Random h5,
+.Question-Anime h5{
+	position: relative;
+	margin-left: 15px;
+	margin-bottom: 35px;
+	color: #fff;
+}
+#Random h5::before,
+#Random h5::after,
+.Question-Anime h5::before,
+.Question-Anime h5::after,
+.Filmgt h5::before,
+.Filmgt h5::after{
+	position: absolute;
+    content: " ";
+    left: 0px;
+}
+#Random h5::before,
+.Question-Anime h5::before,
+.Filmgt h5::before{
+    background-color: #b5e745;
+    height: 4px;
+    width: 30px;
+    top: 26px;
+}
+#Random h5::after,
+.Question-Anime h5::after,
+.Filmgt h5::after{
+	background-color: #696969;
+	opacity: 2;
+	height: 1px;
+	width: 250px;
+    bottom: -15px;
+}
+
+/*Random*/
+#Random{
+	height: 180px;
+}
+#Random h5{
+	margin-bottom: 35px;
+}
+#Random p{
+	font-size: 0.83em;
+	margin-left: 15px;
+}
+#Random a{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	margin-left: 15px;
+	background-color: #b71c1c;
+	font-size: 0.88em;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	line-height: 38px;
+	text-decoration: none;
+}
+
+/*Banner*/
+#ContentMain-Right .Banner{
+	width: 280px;
+	height: 250px;
+	background-color: #fff;
+}
+
+/*QUESTTION*/
+.Question-Anime{
+    height: 850px;
+}
+.Question-Anime h5{
+	margin-top: 10px;
+}
+.Question-All{
+	background-color: #fff;
+    margin-left: 15px;
+    width: 250px;
+    height: 775px;
+    font-size: 12px;
+}
+.Question-All .fbcm{
+	font-weight: 700;
+	margin-left: 15px;
+	padding-top: 15px;
+}
+.Question-All span i{
+	background-color: blue;
+	color: #fff;
+	padding: 7px;
+    border-radius: 5px;
+}
+.Question-All p a{
+	text-decoration: none;
+	color: #ff5722;
+}
+
+/*ANIME MỚI CẬP NHẬP*/
+.Filmgt{
+	width: 280px;
+    height: 400px;
+    background-color: #2d2d2d;
+}
+.Filmgt h5{
+	position: relative;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #fff;
+    display: inline-block;
+}
+
+/*List Film*/
+.Filmgt ul{
+	list-style-type: none;
+	padding-left: 15px;
+	color: #ce9090;
+}
+.Filmgt ul li{
+	position: relative;
+}
+.Filmgt ul li::after{
+	position: absolute;
+    content: " ";
+    left: 0px;
+    background-color: #696969;
+    opacity: 2;
+    height: 1px;
+    width: 250px;
+    margin-top: 28px;
+}
+.Filmgt ul li a{
+	text-decoration: none;
+    color: #ce9090;
+    font-size: 14px;
+    padding: 6px 0px;
+    display: inline-block;
+}
+.Filmgt ul li:hover{
+	border-left: 5px solid red;
+}
+.Filmgt ul li a:hover{
+	margin-left: 10px;
+	color: #fff;
+}
+
+
+
+
+/*Film Hot Tuan*/
+
+.Top-Tuan .Film{
+	width: 55px;
+	height: 85px;
+	float: left;
+	margin-right: 16px;
+	position: relative;
+}
+.Top-Tuan .Filmnew-Play{
+	display: none;
+	position: absolute;
+	left: 0;
+    right: 0;
+    bottom: 0px;
+    top: 0;
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    animation-name: a;
+    animation-duration: 0.1s;
+}
+.Film:hover .Filmnew-Play{
+	display: inline;
+	background-color: rgba(0,0,0,.4);
+	z-index: 10;
+}
+@keyframes a{
+	0%{width: 0px;height: 0px;font-size: 0;}
+	50%{width: 25px;height: 25px;font-size: 0.5;}
+	100%{width: 50px;height: 50px;font-size: 1;}
+}
+
+
+
+
+
+
+
+.Film-Hot-Tuan{
+	display: inline-block;
+    margin: 20px 0px 0px 0px;
+	width: 280px;
+	height: 580px;
+	background-color: #2d2d2d;
+	font-size: 15px;
+}
+.Film-Hot-Tuan .Title{
+	position: relative;
+	color: #fff;
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.Film-Hot-Tuan .Title::after,
+.Film-Hot-Tuan .Title::before{
+	position: absolute;
+	content: " ";
+	left: 0px;
+}
+.Film-Hot-Tuan .Title::before{
+    background-color: #b5e745;
+    height: 4px;
+    width: 30px;
+    top: 28px;
+}
+.Film-Hot-Tuan .Title::after{
+	background-color: #696969;
+	opacity: 2;
+	height: 1px;
+	width: 250px;
+    bottom: -15px;
+}
+.Film-Hot-Tuan .Top{
+	display: inline-block;
+}
+.Film-Hot-Tuan .Top a{
+	margin-left: 13px;
+	text-decoration: none;
+}
+.Film-Hot-Tuan .Top .Anime-bo{
+	color: red;
+}
+.Film-Hot-Tuan .Top .Anime-le{
+	color: gray;
+}
+/*Top Tuần*/
+.Top-Tuan ul{
+	list-style-type: none;
+}
+.Top-Tuan .Top{
+	position: relative;
+	width: 265px;
+    left: -25px;
+    top: 15px;
+    min-height: 100px;
+}
+.Top img{
+	width: 55px;
+	height: 85px;
+	position: absolute;
+	margin: 0;
+}
+.Top span{
+	position: absolute;
+	width: 180px;
+	max-width: 180px;
+    left: 65px;
+    top: 3px;
+    color: #fff;
+}
+.Top .Infor-Top{
+	display: flex;
+	position: absolute;
+    left: 65px;
+    top: 30px;
+}
+.Infor-Top i,
+.Infor-Top p{
+	float: left;
+}
+.Infor-Top p{
+	margin: 0px 0px 0px 8px;
+	color: #fff;
+    text-align: center;
+    line-height: 19px;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 9px;
+    width: 35px;
+    height: 19px;
+}
+
+
+/*Tag List Main*/
+.Tag-List-Main{
+	margin-top: 30px;
+	width: 280px;
+}
+.Tag-List-Main ul{
+	list-style-type: none;
+	font-size: 14px;
+}
+.Tag-List-Main ul li{
+	border-radius: 5px;
+	border-left: 6px solid red;
+	height: 25px;
+	background-color: black;
+	margin: 0px 0px 3px -30px;
+	display: inline-block;
+}
+.Tag-List-Main li a{
+	text-decoration: none;
+	color: #fff;
+}
+.Tag-Item{
+	margin-left: 5px;
+	line-height: 25px;
+}
+.Tag-List-Main a:hover{
+	color: #7d7d7d;
+}
